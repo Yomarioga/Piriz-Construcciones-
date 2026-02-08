@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piriz Construcciones - Especialistas en Albañilería</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5276;
+            --secondary: #e67e22;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo h1 {
+            color: var(--primary);
+            font-size: 2rem;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo-icon {
+            color: var(--secondary);
+            font-size: 2.5rem;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 20px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .services {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .service-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid var(--secondary);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2rem; }
+            .logo h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hard-hat logo-icon"></i>
+                <h1>Piriz <span>Construcciones</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Especialistas en Albañilería e Isopanel</h2>
+            <p>Más de 15 años de experiencia en construcción, colocación de isopanel, revestimientos y servicios sanitarios</p>
+            <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trowel"></i>
+                    </div>
+                    <h3>Albañilería General</h3>
+                    <p>Construcción, ampliaciones y remodelaciones</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Colocación de Isopanel</h3>
+                    <p>Aislamiento térmico y acústico profesional</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-border-style"></i>
+                    </div>
+                    <h3>Revestimientos</h3>
+                    <p>Terminaciones de alta calidad</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3>Servicios Sanitarios</h3>
+                    <p>Instalación y mantenimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container" style="padding: 60px 0;">
+        <div class="section-title">
+            <h2>Contacto</h2>
+        </div>
+        <div style="background: white; padding: 30px; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+            <h3 style="color: var(--primary); margin-bottom: 20px;">¿Tienes un proyecto?</h3>
+            <p style="margin-bottom: 20px;">Contáctanos para un presupuesto sin compromiso</p>
+            <div style="text-align: left; margin-bottom: 30px;">
+                <p><i class="fas fa-phone" style="color: var(--secondary);"></i> +598 XX XXX XXX</p>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> Montevideo, Uruguay</p>
+            </div>
+            <a href="tel:+598XXXXXXXXX" class="btn">Llamar ahora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Piriz Construcciones - Especialistas en albañilería, isopanel y revestimientos</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Servicios en Montevideo y área metropolitana</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Formulario simple
+            const btn = document.querySelector('.btn[href="#contacto"]');
+            if(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Para contactarnos, llámanos al +598 XX XXX XXX o envíanos un mensaje.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
